@@ -17,6 +17,8 @@ body {
 
 .site-content {
   flex: 1;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .posts img {
@@ -25,5 +27,81 @@ body {
 }
 
 .top-section {
-  min-height: calc(100vh - 73px);
+  min-height: 100vh;
+  background-color: #eaeaea;
+}
+
+.homepage .card {
+  padding: 1rem;
+}
+
+.nav-pills li a {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: var(--black);
+  letter-spacing: -1px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+footer span {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: var(--black);
+  letter-spacing: -1px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.nav-border {
+  border-bottom: 4px solid var(--black) !important;
+}
+
+.footer-border {
+  border-top: 4px solid var(--black) !important;
+}
+
+.homepage--cards {
+  padding: 1rem !important;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.homepage--cards .card {
+  border: 4px solid var(--black);
+  margin: 1rem;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* width: 50%; */
+  /* grid-area: 1 / 1 / 3 / 3; */
+}
+
+.homepage--cards .card::after {
+  content: 'Więcej >';
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.btn {
+  border-radius: 0 !important;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: .75rem !important;
+  letter-spacing: 1px;
+}
+
+.btn-outline-primary {
+  border-color: var(--black) !important;
+  color: var(--black) !important;
+}
+
+.btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: var(--black) !important;
 }
