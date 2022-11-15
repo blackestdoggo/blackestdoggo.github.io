@@ -35,13 +35,24 @@ body {
   padding: 1rem;
 }
 
-.nav-pills li a {
+.nav-pills .nav-link {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.nav-pills .nav-item .nav-link {
   font-family: sans-serif;
   text-transform: uppercase;
   color: var(--black);
   letter-spacing: -1px;
   font-weight: 600;
   font-size: 1rem;
+  border-radius: 0;
+  transition: all 200ms ease-in-out;
+}
+
+.nav-pills .nav-link:hover {
+  background: #eaeaea;
 }
 
 footer span {
