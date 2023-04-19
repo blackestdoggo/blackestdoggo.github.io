@@ -27,9 +27,33 @@ body {
 }
 
 .top-section {
-  min-height: 100vh;
+  min-height: calc(100vh - 212px);
   /* background-color: #eaeaea; */
   background: url('denim.webp');
+}
+
+.mailme {
+  color: #eaeaea;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 1rem;
+  display: block;
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+}
+
+.mailme:hover {
+  color: black;
+  background: #eaeaea;
+}
+
+.construction {
+  color: #aeaeae;
+}
+
+.mono {
+  font-family: monospace;
 }
 
 .homepage .card {
@@ -76,7 +100,7 @@ footer span {
 .homepage--cards {
   padding: 1rem !important;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;

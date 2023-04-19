@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.jumbotron {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.black, .dog {
+  font-size: 13vw;
+  text-align: center;
+  width: 50%;
+  position: relative;
+}
+
+.black {
+  color: white;
+  background-color: black;
+  z-index: 1;
+}
+
+.dog {
+  color: black;
+  background-color: white;
+}
+
+body {
+  background: linear-gradient(to right, black 50%, white 50%);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+    </style>
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="black">BLACK</div>
+        <div class="dog">DOG</div>
+    </div>    
+</body>
+</html>

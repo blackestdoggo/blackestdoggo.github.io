@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* blink-cursor */
+      .blinking-cursor {
+        animation: 1s step-end infinite blink;
+        height: 10px;
+        width: 10px;
+        background: white;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        animation-duration: 0.75s;
+        animation-name: blink;
+      }
+      @keyframes blink {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      /* Terminal */
+      .terminal {
+        font-size: 1rem;
+        font-family: monospace;
+        color: white;
+        background: black;
+        padding: 20px;
+        height: 500px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="terminal">
+      <p>&gt; <span id="typing-output" class="blinking-cursor"></span></p>
+    </div>
+
+    <script>
+      const typingOutput = document.querySelector("#typing-output");
+      let i = 0;
+      const text = "Blackdog";
+
+      document.addEventListener("keydown", (event) => {
+        typingOutput.textContent = text.slice(0, i + 1);
+        i = (i + 1) % text.length;
+      });
+    </script>
+  </body>
+</html>
